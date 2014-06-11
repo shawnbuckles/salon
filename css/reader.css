@@ -39,9 +39,16 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 5em;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 10px solid rgba(136, 136, 136, 0.3);
+
 }
 h2 {
     font-size: 3em;
+    text-align: center;    
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(136, 136, 136, 0.3);
 }
 h3 {
     font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
@@ -74,7 +81,10 @@ p.quote {
 }
 p.bron {
     font-style: italic;
+    color: #95a5a6;
     font-size: .8em;
+    padding: 1em;
+    border-top: 1px solid rgba(136, 136, 136, 0.3);
 }
 
 a {
@@ -88,11 +98,14 @@ a:hover {
 ul, ol {
     margin: 2em auto;
 }
+ol.inhoud {
+    text-align: center;
+    color: #95a5a6;
+}
 li {
     border-bottom: 1px solid rgba(136, 136, 136, 0.3);
     margin-bottom: 0.4em;
     padding-bottom: 0.4em;
-    color: #2c3e50;
 }
  li:last-child {
     border: medium none;
@@ -105,6 +118,8 @@ li {
 
 section {
     margin: 6em auto;
+    padding-bottom: 5em;
+    background: url('../img/divider.png') no-repeat center bottom;
 }
 
 .story-content {
@@ -122,19 +137,51 @@ section {
     margin: 0 auto;
 }
 
+iframe {
+    margin: 2em auto;
+}
+
 /* ---------------------- */
 
 /* sections */
 
-.lead {
-    padding: 8em 0 0 0;
+.aanhef {
+    margin-top: 0;
+    background: #c0392b;
+    padding-top: 6em;
+
 }
 
-.lead {
-    background: ;
+.aanhef h1 {
+    line-height: 1em;
+    margin-bottom: 0px;
+    padding-top: .3em;
+    border-top: 0px #c0392b solid;
+    padding-bottom: .3em;
+    border-bottom: 0px #2980b9 solid;
 }
-.lead h1 {
-    color: ;
+
+.aanhef p {
+    color: #ecf0f1;
+    text-align: center;
+}
+.aanhef a {
+    border-bottom: 1px solid #f39c12;
+    color: #f1c40f;
+    text-decoration: none;
+}
+.aanhef a:hover {
+    color: #f39c12;
+}
+
+.lead h1{
+    font-size: 7em;
+    margin-bottom: 0;
+}
+.lead h1.bald {
+    border-bottom: none;
+    margin-top: 0;
+    font-size: 5em;
 }
 
 .footer {

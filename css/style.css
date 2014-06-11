@@ -29,36 +29,33 @@ body {
 
 /* typography */
 
-h1, h2, h3 {
-    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
-    letter-spacing: -0.05em;
-    text-align: left;
+h1, h2, h3, h4 {
+    font-family: 'Skolar Italic', 'Roboto Slab', 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
+    letter-spacing: -0.04em;
     color: #c0392b;
-    font-weight: 300;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1em;
 }
+
 
 h1 {
-    font-size: 2.2em;
-    text-transform: none;
-    margin: 1em 0 0 0;
+    font-size: 5em;
+    margin-bottom: 0;
 }
-
 h2 {
-    letter-spacing: -0.05em;
-    font-size: 2.2em;
-    margin: .5em 0 0 0;
+    margin: 0 auto;
+    font-size: 2.4em;
 }
-
 h3 {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, "pragmatica-web", Arial, sans-serif;
+    font-size: 2em;
+}
+h4 {
     font-size: 1.6em;
-    margin: 1em 0 0 0;
+    color: #2c3e50;
 }
 
-h4 {
-    font-size: .4em;
-    text-transform: uppercase;
-    font-family: 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
-}
 
 blockquote {
     font-family: skolar, 'ff-meta-serif-web-pro', Georgia, Times, "Times New Roman", serif;
@@ -71,8 +68,15 @@ blockquote {
 }
 
 p {
+    margin: 2em auto;
+    text-align: center;
+    text-align: justify;
     font-size: 1em;
     color: #34495e;
+}
+.nadruk {
+    border-bottom: 2px solid rgba(189, 195, 199,1.0);
+    font-weight: 500;
 }
 
 a {
@@ -83,15 +87,27 @@ a {
 a:hover {
     color: #e74c3c;
 }
+.aanmelden a {
+    color: #ecf0f1;
+}
 ul {
     list-style-type: none;
     padding-left: 0;
-    font-size: 0.8em;
+    font-size: 1em;
+    text-align: center;
+    color: #34495e;
+}
+
+ul.aanmelden {
+    padding: 2em 3em;
+    background: #27ae60;
 }
 li {
-    border-bottom: 0px solid rgba(136, 136, 136, 0.3);
-    margin-bottom: 0.4em;
-    padding-bottom: 0.4em;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.3);
+
+}
+.aanmelden li {
+    border-bottom: 1px solid rgba(46, 204, 113,1.0);
 }
  li:last-child {
     border: medium none;
@@ -103,7 +119,7 @@ li {
 /* lay-out */
 
 section {
-    padding: 0.5em 0 0.5em 0;
+    padding: 4em 0;
 }
 
 .story-content {
@@ -112,7 +128,7 @@ section {
 
 .site-width {
     width: 90%;
-    max-width: 950px;
+    max-width: 550px;
     margin: 0 auto;
 }
 
@@ -127,7 +143,6 @@ section {
 
 .aanhef {
     background: #c0392b;
-    padding: 4em 0;
 }
 
 .aanhef h1 {
@@ -157,15 +172,15 @@ section {
     background: #ecf0f1;
     padding: 4em 0;
 }
-.publicaties {
-
+.hide {
+    display: none;
 }
 
 .footer {
     background: #34495e;
 
     margin-top: 4em;
-    font-size: .7em;
+    font-size: 1em;
     padding-bottom: 2em;
 }
 .footer p{
