@@ -112,6 +112,9 @@ li {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+ol.inhoud li {
+    border-bottom: 0px;
+}
 /* ---------------------- */
 
 /* lay-out */
@@ -119,7 +122,7 @@ li {
 section {
     margin: 6em auto;
     padding-bottom: 5em;
-    background: url('../img/divider.png') no-repeat center bottom;
+    background: url('../img/adw.png') no-repeat center bottom;
 }
 
 .story-content {
